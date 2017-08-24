@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="my.app">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
+        <script src="/bower_components/ngmap/build/scripts/ng-map.min.js"></script>
+        <script src="http://maps.google.com/maps/api/js"></script>
+
+        <script src="app/app.js"></script>
+        
+        <!-- controladores module -->
+        <script src="app/controller/module.controller.js"></script>
+        <script src="app/controller/controller.themes.js"></script>
+       
+        
+        <!-- servicios module -->
+        <script src="app/service/module.services.js"></script>
+        <script src="app/service/service.themes.js"></script>
+ 
+         
+    </head>
+    <body>
+        {{2 + 2}}
+
+       <div ng-controller="mapController as mapCtrl">
+           <ng-map center="[40.74, -74.18]"></ng-map>
+       </div>
+    </body>
+</html>
